@@ -5,8 +5,6 @@ name: Deploy to prod(rollback)
 # Controls when the workflow will run
 on:
   push:
-    tags:
-      - "*"
 
   workflow_call:
     inputs:
