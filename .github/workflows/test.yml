@@ -4,14 +4,14 @@ name: Deploy to prod(rollback)
 
 # Controls when the workflow will run
 on:
-  push:
-
   workflow_call:
     inputs:
       ROLLBACK_REASON:
         required: true
         type: string
         description: "ロールバック理由"
+
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
